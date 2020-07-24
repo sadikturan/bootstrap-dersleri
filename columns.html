@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>Bootstrap Columns</title>
+  </head>
+  <body>
+
+    <!--Vertical Alignment-->
+    <div class="container my-4">
+
+        <div class="row align-items-start" style="height: 150px;border:1px solid #333;margin-bottom: 2px;">
+            <div class="col">column</div>
+            <div class="col">column</div>
+            <div class="col">column</div>
+        </div>
+        <div class="row align-items-center" style="height: 150px;border:1px solid #333;margin-bottom: 2px;">
+            <div class="col">column</div>
+            <div class="col">column</div>
+            <div class="col">column</div>
+        </div>
+        <div class="row align-items-end" style="height: 150px;border:1px solid #333;margin-bottom: 2px;">
+            <div class="col">column</div>
+            <div class="col">column</div>
+            <div class="col">column</div>
+        </div>
+
+    </div>    
+
+    <!--Horizontal Alignment-->
+
+    <div class="container my-4">
+        <div class="row justify-content-start mb-3">
+            <div class="col-4 bg-primary">column</div>
+            <div class="col-4 bg-primary">column</div>
+        </div>
+        <div class="row justify-content-center mb-3">
+            <div class="col-4 bg-primary">column</div>
+            <div class="col-4 bg-primary">column</div>
+        </div>
+        <div class="row justify-content-end mb-3">
+            <div class="col-4 bg-primary">column</div>
+            <div class="col-4 bg-primary">column</div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row justify-content-around mb-3">
+            <div class="col-2 bg-primary">column</div>
+            <div class="col-2 bg-primary">column</div>
+            <div class="col-2 bg-primary">column</div>
+        </div>
+        <div class="row justify-content-between mb-3">
+            <div class="col-2 bg-primary">column</div>
+            <div class="col-2 bg-primary">column</div>
+            <div class="col-2 bg-primary">column</div>
+        </div>
+        <div class="row justify-content-evenly mb-3">
+            <div class="col-2 bg-primary">column</div>
+            <div class="col-2 bg-primary">column</div>
+            <div class="col-2 bg-primary">column</div>
+        </div>
+    </div>
+
+
+    <!--Ordering-->
+
+    <div class="container my-4">
+        <div class="row mb-3">
+            <div class="col bg-success order-5">column 1</div>
+            <div class="col bg-success order-3">column 2</div>
+            <div class="col bg-success order-1">column 3</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col bg-success order-last">column 1</div>
+            <div class="col bg-success">column 2</div>
+            <div class="col bg-success order-first">column 3</div>
+        </div>
+    </div>
+
+    <!--Offsetting-->
+
+    <div class="container my-4">
+        <div class="row mb-3">
+            <div class="col-4 bg-danger">column 1</div>
+            <div class="col-4 offset-4 bg-danger">column 2</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-4 bg-danger">column 1</div>
+            <div class="col-4 offset-md-4 bg-danger">column 2</div>
+        </div>
+    </div>
+
+
+     <!--Margin-->
+     <div class="container my-4">
+        <div class="row mb-3">
+            <div class="col-4 bg-warning">column 1</div>
+            <div class="col-4 ml-auto bg-warning">column 2</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-4 mr-md-auto bg-warning">column 1</div>
+            <div class="col-4 bg-warning">column 2</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>

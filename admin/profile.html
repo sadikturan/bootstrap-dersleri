@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Admin</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="categories.html" class="nav-link">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="users.html" class="nav-link">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="orders.html" class="nav-link">Orders</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-user"></i> Welcome Guest
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="profile.html" class="dropdown-item">
+                                <i class="fa fa-user-circle"></i> Profile
+                            </a>
+                            <a href="settings.html" class="dropdown-item">
+                                <i class="fa fa-cog"></i> Settings
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="fa fa-user-times"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-secondary text-white p-2">
+        <div class="container">
+            <h1 class="h5 mb-0"><i class="fa fa-user"></i> Profile</h1>
+        </div>
+    </div>
+
+    <section id="actions" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="btn btn-secondary btn-block">
+                        <i class="fa fa-arrow-left"></i> Back To Dashboard
+                    </button>
+                </div>     
+                <div class="col-md-3">
+                    <button class="btn btn-info btn-block">
+                        <i class="fa fa-lock"></i> Change Password
+                    </button>
+                </div>     
+                <div class="col-md-3">
+                    <button class="btn btn-danger btn-block">
+                        <i class="fa fa-trash"></i> Delete Account
+                    </button>
+                </div>           
+            </div>
+        </div>
+    </section>
+
+    <section id="results">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-success alert-dismissible fade show">
+                        <i class="fa fa-check"></i> Bilgileriniz kayıt edildi.
+                        <button class="close" data-dismiss="alert">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="alert alert-warning">
+                        <i class="fa fa-question"></i> Bilgilerinizi kontrol ediniz.
+                    </div>
+                    <div class="alert alert-danger">
+                        <i class="fa fa-times"></i> Bilinmeyen bir hata oluştu. Tekrar deneyiniz.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-3">
+        <div class="row">
+           <div class="col-md-3">
+               <div class="card">
+                   <div class="card-header">Your Image</div>
+                   <img src="img/avatar.jpg" class="card-img-top p-3" alt="">
+                   <div class="card-body">
+                       <button class="btn btn-secondary btn-block"><i class="fa fa-arrow-circle-up"></i> Upload Image</button>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-9">
+               <div class="card">
+                   <div class="card-header">Edit Profile</div>
+                   <div class="card-body">
+                       <form>
+                           <div class="mb-3">
+                               <label for="name">Name</label>
+                               <input type="text" class="form-control">
+                           </div>
+                           <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name">Name</label>
+                            <textarea name="about" id="about" class="form-control"></textarea>
+                        </div>
+                        <div class="mb-3">
+                           <button class="btn btn-primary"><i class="fa fa-check"></i> Save Changes </button>
+                        </div>
+                       </form>
+                   </div>
+               </div>
+           </div>
+        </div>       
+    </div>    
+   
+
+    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('about');
+    </script>
+</body>
+</html>

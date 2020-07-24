@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Admin</a>       
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row justify-content-center ">        
+           <div class="col-md-5">
+               <div class="card">
+                   <div class="card-header">Login</div>
+                   <div class="card-body">
+
+                        <form>
+                            <div class="row mb-3">
+                                <label for="email" class="col-sm-3 col-form-label">Email</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="password" class="col-sm-3 col-form-label">Password</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-9 offset-sm-3">
+                                    <input type="checkbox" class="form-check-input" id="benihatirma">
+                                    <label for="benihatirla" class="form-check-label">Beni Hatırla</label>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-9 offset-sm-3">
+                                   <button class="btn btn-primary"><i class="fa fa-check"></i> Login </button>
+                                </div>
+                            </div>
+                        </form>
+
+
+                      
+                   </div>
+               </div>
+           </div>
+        </div>       
+    </div>    
+   
+
+    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('about');
+    </script>
+</body>
+</html>

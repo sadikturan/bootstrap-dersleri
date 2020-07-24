@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Admin</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="categories.html" class="nav-link">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="users.html" class="nav-link">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="orders.html" class="nav-link">Orders</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-user"></i> Welcome Guest
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="profile.html" class="dropdown-item">
+                                <i class="fa fa-user-circle"></i> Profile
+                            </a>
+                            <a href="settings.html" class="dropdown-item">
+                                <i class="fa fa-cog"></i> Settings
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">
+                            <i class="fa fa-user-times"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-secondary text-white p-2">
+        <div class="container">
+            <h1 class="h5 mb-0"><i class="fa fa-caret-right"></i> Dashboard</h1>
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center bg-primary text-white mb-3">
+                    <div class="card-body">
+                        <h3>Users</h3>
+                        <h4 class="display-4"> <i class="fa fa-user"></i> 125 </h4>
+                        <a href="" class="btn btn-outline-light btn-sm">Manage</a>
+                    </div>
+                </div>
+                <div class="card text-center bg-success text-white mb-3">
+                    <div class="card-body">
+                        <h3>Products</h3>
+                        <h4 class="display-4"> <i class="fa fa-folder-open"></i> 256 </h4>
+                        <a href="" class="btn btn-outline-light btn-sm">Manage</a>
+                    </div>
+                </div>
+                <div class="card text-center bg-info text-white mb-3">
+                    <div class="card-body">
+                        <h3>Categories</h3>
+                        <h4 class="display-4"> <i class="fa fa-folder-open"></i> 12 </h4>
+                        <a href="" class="btn btn-outline-light btn-sm">Manage</a>
+                    </div>
+                </div>
+                <div class="card text-center bg-warning text-white mb-3">
+                    <div class="card-body">
+                        <h3>Orders</h3>
+                        <h4 class="display-4"> <i class="fa fa-shopping-basket"></i> 179 </h4>
+                        <a href="" class="btn btn-outline-light btn-sm">Manage</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card mb-3">
+                        <div class="card-header" id="headingOne">
+                            <button type="button" data-toggle="collapse" data-target="#collapseOne" class="btn btn-link btn-block text-left text-decoration-none link-dark">
+                                En son Siparişler
+                            </button>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                            <table class="table mb-0">
+                                <thead class="table-secondary">
+                                    <tr>
+                                        <td>Order Id</td>
+                                        <td>Username</td>
+                                        <td>Total</td>
+                                        <td>Date</td>
+                                        <td>State</td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1010</td>
+                                        <td>username1</td>
+                                        <td>1000 TL</td>
+                                        <td>10/10/2020 22.00</td>
+                                        <td>
+                                            <span class="badge bg-primary">Onay Bekliyor</span>
+                                        </td>
+                                        <td class="text-right">
+                                            <a href="details.html" class="btn btn-primary btn-sm"> <i class="fa fa-caret-right"></i> Details</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1011</td>
+                                        <td>username2</td>
+                                        <td>2000 TL</td>
+                                        <td>10/10/2020 23.00</td>
+                                        <td>
+                                            <span class="badge bg-warning">Hazırlanıyor</span>
+                                        </td>
+                                        <td class="text-right">
+                                            <button class="btn btn-primary btn-sm"> <i class="fa fa-caret-right"></i> Details</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1012</td>
+                                        <td>username1</td>
+                                        <td>1000 TL</td>
+                                        <td>10/10/2020 22.00</td>
+                                        <td>
+                                            <span class="badge bg-success">Kargolandı</span>
+                                        </td>
+                                        <td class="text-right">
+                                            <button class="btn btn-primary btn-sm"> <i class="fa fa-caret-right"></i> Details</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1013</td>
+                                        <td>username3</td>
+                                        <td>1000 TL</td>
+                                        <td>10/10/2020 22.00</td>
+                                        <td>
+                                            <span class="badge bg-primary">Onay Bekliyor</span>
+                                        </td>
+                                        <td class="text-right">
+                                            <button class="btn btn-primary btn-sm"> <i class="fa fa-caret-right"></i> Details</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1010</td>
+                                        <td>username1</td>
+                                        <td>1000 TL</td>
+                                        <td>10/10/2020 22.00</td>
+                                        <td>
+                                            <span class="badge bg-primary">Onay Bekliyor</span>
+                                        </td>
+                                        <td class="text-right">
+                                            <button class="btn btn-primary btn-sm"> <i class="fa fa-caret-right"></i> Details</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-3">
+                        <div class="card-header" id="headingTwo">
+                            <button type="button" data-toggle="collapse" data-target="#collapseTwo" class="btn btn-link btn-block text-left text-decoration-none link-dark">
+                                Son Eklenen Ürünler
+                            </button>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                            <table class="table mb-0">
+                                <thead class="table-secondary">
+                                    <tr>
+                                        <td>Product Id</td>
+                                        <td>Image</td>
+                                        <td>Name</td>
+                                        <td>Price</td>
+                                        <td>Approved</td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   <tr>
+                                       <td>1</td>
+                                       <td>
+                                           <img src="img/1.jpg" class="img-fluid" width="50" alt="">
+                                       </td>
+                                       <td>Samsung S6</td>
+                                       <td>1000 TL</td>
+                                       <td>
+                                           <i class="fa fa-check"></i>
+                                       </td>
+                                       <td class="text-right">
+                                            <button class="btn btn-primary btn-sm"> <i class="fa fa-caret-right"></i> Details</button>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src="img/2.jpg" class="img-fluid" width="50" alt="">
+                                    </td>
+                                    <td>Samsung S7</td>
+                                    <td>2000 TL</td>
+                                    <td>
+                                        <i class="fa fa-check"></i>
+                                    </td>
+                                    <td class="text-right">
+                                         <button class="btn btn-primary btn-sm"> <i class="fa fa-caret-right"></i> Details</button>
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src="img/3.jpg" class="img-fluid" width="50" alt="">
+                                    </td>
+                                    <td>Samsung S8</td>
+                                    <td>3000 TL</td>
+                                    <td>
+                                        <i class="fa fa-check"></i>
+                                    </td>
+                                    <td class="text-right">
+                                         <button class="btn btn-primary btn-sm"> <i class="fa fa-caret-right"></i> Details</button>
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src="img/4.jpg" class="img-fluid" width="50" alt="">
+                                    </td>
+                                    <td>Samsung S9</td>
+                                    <td>5000 TL</td>
+                                    <td>
+                                        <i class="fa fa-check"></i>
+                                    </td>
+                                    <td class="text-right">
+                                         <button class="btn btn-primary btn-sm"> <i class="fa fa-caret-right"></i> Details</button>
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src="img/5.jpg" class="img-fluid" width="50" alt="">
+                                    </td>
+                                    <td>Samsung S10</td>
+                                    <td>5000 TL</td>
+                                    <td>
+                                        <i class="fa fa-times"></i>
+                                    </td>
+                                    <td class="text-right">
+                                         <button class="btn btn-primary btn-sm"> <i class="fa fa-caret-right"></i> Details</button>
+                                     </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

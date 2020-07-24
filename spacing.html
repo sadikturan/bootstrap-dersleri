@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>Bootstrap Spacing</title>
+    <style>
+        body { padding: 70px; }
+    </style>
+  </head>
+  <body>
+
+    <!--
+        Margin ve Padding=> {property}{sides}-{size}
+
+        {property} => 
+            m: margin p: padding
+
+        {sides} => 
+            t: top
+            b: bottom
+            l: left
+            r: right
+            x: left, right
+            y: top, bottom
+
+        {size} =>
+            0: mt-0 => margin-top:0 
+            1: mt-1 => margin-top:$spacer * 0.25
+            2: mt-2 => margin-top:$spacer * 0.50
+            3: mt-3 => margin-top:$spacer
+            4: mt-4 => margin-top:$spacer * 1.5
+            5: mt-5 => margin-top:$spacer * 3
+            auto: mx-auto            
+
+    -->
+
+
+    <div class="bg-success p-3">first</div>
+    <div class="bg-danger pt-5 mt-2">second</div>
+
+    <br><br>
+
+    <div class="bg-primary p-3 mx-auto" style="text-align: center;width: 150px;">
+        centered element
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>

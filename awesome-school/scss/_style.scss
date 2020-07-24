@@ -1,0 +1,132 @@
+.navbar .nav-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+} 
+
+.navbar .nav-item.active {
+    font-weight: bold;
+    border-bottom: $warning 3px solid;
+}
+
+.btn-circle {
+    border-radius: 25px;
+    padding: 13px 30px;
+}
+
+.carousel-item {
+    position: relative;
+    height: 450px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.7);
+}
+
+#home-heading {
+    position: relative;
+    min-height: 200px;
+    background-image: url('../img/bg2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 54px;
+    text-align: center;
+    color: white;
+}
+
+#video {
+    position: relative;
+    min-height: 200px;
+    background-image: url('../img/media.jpg'); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -300px;
+    text-align: center;
+    color: white;
+}
+
+#video a {
+    color: #fff;
+}
+
+#about-heading {
+    position: relative;
+    min-height: 200px;
+    background-image: url('../img/bg2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -100px; 
+    text-align: center;
+    color: white;
+}
+
+#course-heading {
+    position: relative;
+    min-height: 200px;
+    background-image: url('../img/bg2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    text-align: center;
+    color: white;
+}
+
+.checked {
+    color: $warning;
+}
+
+.course-thumb {
+    position: relative;
+}
+
+.course-thumb ul {
+    margin: 0;
+    padding: 0;
+}
+
+.course-meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba($color: #000000, $alpha: 0.6);
+    padding: 4px 20px;
+    border-radius: 0 4px 0 0;
+    color: white;
+    font-size: 0.8rem;
+}
+
+#blog-heading {
+    position: relative;
+    min-height: 200px;
+    background-image: url('../img/bg2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    text-align: center;
+    color: white;
+}
+
+.date ul {
+    padding: 0;
+    margin: 0;
+}
+
+.date {
+    background: #1F3345;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.breadcrumb {
+    background: none;
+}
