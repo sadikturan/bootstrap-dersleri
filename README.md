@@ -7,11 +7,11 @@ Temel html ve css bilgisiyle sıfırdan güzel görünümlü web tasarımların�
 
 Ancak uyumluluk, responsive vb. temel tasarım yeteneklerini bootstrap kütüphanesine bırakırsak işlerimiz oldukça kolaylaşır. 
 
-Son zamanlarda oldukça popüler hale gelen bootstrap css ve javascript kütüphanesi çoğu büyük firma tarafından kullanılmaktadır. Bu yüzden iyi bir bootstrap bilgisine sahip olmak çok değerli hale gelmiştir.
+Son zamanlarda oldukça popüler hale gelen bootstrap,css ve javascript kütüphanesi çoğu büyük firma tarafından kullanılmaktadır. Bu yüzden iyi bir bootstrap bilgisine sahip olmak çok değerli hale gelmiştir.
 
 Temel css ve html bilgisiyle kursa katılıp kısa zamanda güzel görünümlü web tasarımlarını kolaylıkla yapabilir ve projelerinizde sürekli tasarım arama çabasından kurtulabilirsiniz.
 
-** Bu Kursta Neler Yapacağız?
+**Bu Kursta Neler Yapacağız?**
 
 * En basitiyle hangi font türünü kullanmalıyım, yazı boyutu ne olsun, hangi renk hangisiyle daha uyumlu gibi temel konuları artık düşünmemize gerek kalmadan premium tasarımlarla hedefimize kolaylıkla ulaşıyoruz.
 
@@ -25,14 +25,14 @@ Temel css ve html bilgisiyle kursa katılıp kısa zamanda güzel görünümlü 
 
 * Sass ile hazırladığımız kodlarımızı Sass compiler ile css kodlarına nasıl çevirebiliriz, öğreniyoruz.
 
-** En son versiyon!
+**En son versiyon!**
 
 Bu kurs, Bootstrap 5'in (Henüz Beta) son sürümünü kullanan en güncel kurstur.
 
-** Gerçek Projeler / Premium Temalar
+**Gerçek Projeler / Premium Temalar**
 
 Tüm konuları öğrendikten sonra bilgilerimizi birleştirerek sıfırdan 3 farklı projeyi baştan sona yapacağız. 
 
-1- Social Template
-2- Awesome School
-3- Admin Template
+* Social Template
+* Awesome School
+* Admin Template
