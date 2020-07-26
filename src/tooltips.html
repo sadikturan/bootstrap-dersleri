@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>Bootstrap Tooltips</title>
+    <style>
+        body { padding: 70px; }
+    </style>
+  </head>
+  <body>
+   
+    <button id="btnShow" class="btn btn-danger">Show</button>
+    <button id="btnHide" class="btn btn-danger">Hide</button>
+    <button id="btnToggle" class="btn btn-danger">Toggle</button>
+
+    <br><br>
+
+    <button id="btn1" type="button" class="btn btn-primary" data-placement="top" data-toggle="tooltip" title="tooltip text">Tooltip Text</button>
+    <button id="btn2" type="button" class="btn btn-primary" data-placement="right" data-toggle="tooltip" data-html="true" title="<h1>tooltip text</h1><p>lorem ipsum.</p>">Tooltip Html</button>
+    <button id="btn3" type="button" class="btn btn-primary" data-placement="bottom" data-toggle="tooltip" data-html="true" title="<h1>tooltip text</h1><p>lorem ipsum.</p>">Tooltip Html</button>
+    <button id="btn4" type="button" class="btn btn-primary" data-placement="left" data-toggle="tooltip" data-html="true" title="<h1>tooltip text</h1><p>lorem ipsum.</p>">Tooltip Html</button>
+
+    <br><br>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script>     
+      
+        var btn1= document.getElementById('btn1');
+        // const btnTooltip1 = new bootstrap.Tooltip(btn1);
+
+        var btn2= document.getElementById('btn2');
+        // const btnTooltip2 =new bootstrap.Tooltip(btn2);
+
+        var tooltipElementList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'));
+
+        var tooltipObjectList = tooltipElementList.map(function(element) {
+            return new bootstrap.Tooltip(element);
+        })
+
+        console.log(tooltipObjectList);
+
+        document.getElementById('btnShow').addEventListener('click', function() {
+            btnTooltip1.show();
+            btnTooltip2.show();
+        });
+
+        document.getElementById('btnHide').addEventListener('click', function() {
+            btnTooltip1.hide();
+            btnTooltip2.hide();
+        });
+
+        document.getElementById('btnToggle').addEventListener('click', function() {
+            btnTooltip1.toggle();
+            btnTooltip2.toggle();
+        });
+
+
+        btn1.addEventListener('show.bs.tooltip', function() {
+            console.log('tooltip gösterilmeden önce')
+        });
+        btn1.addEventListener('shown.bs.tooltip', function() {
+            console.log('tooltip gösterildikten sonra')
+        });
+        btn1.addEventListener('hide.bs.tooltip', function() {
+            console.log('tooltip gizlenmeden önce')
+        });
+        btn1.addEventListener('hidden.bs.tooltip', function() {
+            console.log('tooltip gizlendikten sonra')
+        });
+        
+
+
+    </script>
+  </body>
+</html>
