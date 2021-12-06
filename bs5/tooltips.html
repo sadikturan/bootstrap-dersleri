@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Bootstrap Tooltips</title>
+    <style>
+        body { padding: 70px; }
+    </style>
+  </head>
+  <body>
+   
+    <button id="btnShow" class="btn btn-primary">Show</button>
+    <button id="btnHide" class="btn btn-primary">Hide</button>
+    <button id="btnToggle" class="btn btn-primary">Toggle</button>
+    
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+
+    <button id="btn1" type="button" class="btn btn-secondary" title="tooltip text" data-bs-toggle="tooltip" data-bs-placement="top">Button</button>
+    <button id="btn2" type="button" class="btn btn-secondary" title="<h1>tooltip html</h1>" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true">Button</button>
+    <button id="btn2" type="button" class="btn btn-secondary" title="<h1>tooltip html</h1>" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true">Button</button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+        var btn1 = document.getElementById("btn1");
+        // var btn1obj1 = new bootstrap.Tooltip(btn1);
+
+        var btn2 = document.getElementById("btn2");
+        // var btn1obj2 = new bootstrap.Tooltip(btn2);
+
+        var tooltipElementList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+
+        var tooltipObjectList = tooltipElementList.map(function(element) {
+            return new bootstrap.Tooltip(element);
+        })
+
+        document.getElementById("btnShow").addEventListener("click", function() {
+            tooltipObjectList[0].show();
+            tooltipObjectList[1].show();
+            tooltipObjectList[2].show();
+        });
+
+        document.getElementById("btnHide").addEventListener("click", function() {
+            tooltipObjectList[0].hide();
+            tooltipObjectList[1].hide();
+            tooltipObjectList[2].hide();
+        });
+
+        document.getElementById("btnToggle").addEventListener("click", function() {
+            tooltipObjectList[0].toggle();
+            tooltipObjectList[1].toggle();
+            tooltipObjectList[2].toggle();
+        });
+
+        btn1.addEventListener("show.bs.tooltip", function() {
+            console.log("show.bs.tooltip");
+        });
+
+        btn1.addEventListener("shown.bs.tooltip", function() {
+            console.log("shown.bs.tooltip");
+        });
+
+        btn1.addEventListener("hide.bs.tooltip", function() {
+            console.log("hide.bs.tooltip");
+        });
+
+        btn1.addEventListener("hidden.bs.tooltip", function() {
+            console.log("hidden.bs.tooltip");
+        });
+        
+    </script>
+</body>
+</html>

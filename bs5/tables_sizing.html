@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Bootstrap Tables & Sizing</title>
+    <style>
+        body { padding: 70px; }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="bg-success mb-2 p-4 w-25"></div>
+    <div class="bg-success mb-2 p-4 w-50"></div>
+    <div class="bg-success mb-2 p-4 w-75"></div>
+    <div class="bg-success mb-2 p-4 w-100"></div>
+
+    <div style="height:400px" class="bg-warning">
+        <div class="bg-primary d-inline-block p-4 h-25"></div>
+        <div class="bg-primary d-inline-block p-4 h-50"></div>
+        <div class="bg-primary d-inline-block p-4 h-75"></div>
+        <div class="bg-primary d-inline-block p-4 h-100"></div>        
+    </div>
+
+    <br><br>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sadık Turan</td>
+                <td>info@sadikturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Turan</td>
+                <td>info@cinarturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ahmet Turan</td>
+                <td>info@ahmetturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Hasan Demir</td>
+                <td>info@hasandemir.com</td>
+                <td>Kocaeli</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table class="table table-success">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sadık Turan</td>
+                <td>info@sadikturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Turan</td>
+                <td>info@cinarturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ahmet Turan</td>
+                <td>info@ahmetturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Hasan Demir</td>
+                <td>info@hasandemir.com</td>
+                <td>Kocaeli</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table class="table">
+        <thead>
+            <tr class="table-secondary">
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sadık Turan</td>
+                <td>info@sadikturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr class="table-success">
+                <td>2</td>
+                <td>Çınar Turan</td>
+                <td>info@cinarturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ahmet Turan</td>
+                <td>info@ahmetturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Hasan Demir</td>
+                <td class="table-danger">info@hasandemir.com</td>
+                <td>Kocaeli</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table class="table table-primary table-striped table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sadık Turan</td>
+                <td>info@sadikturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Turan</td>
+                <td>info@cinarturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ahmet Turan</td>
+                <td>info@ahmetturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Hasan Demir</td>
+                <td>info@hasandemir.com</td>
+                <td>Kocaeli</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <br><br>
+
+    <table class="table table-success table-bordered border-primary">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sadık Turan</td>
+                <td>info@sadikturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Turan</td>
+                <td>info@cinarturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ahmet Turan</td>
+                <td>info@ahmetturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Hasan Demir</td>
+                <td>info@hasandemir.com</td>
+                <td>Kocaeli</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sadık Turan</td>
+                <td>info@sadikturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Turan</td>
+                <td>info@cinarturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ahmet Turan</td>
+                <td>info@ahmetturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Hasan Demir</td>
+                <td>info@hasandemir.com</td>
+                <td>Kocaeli</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sadık Turan</td>
+                <td>info@sadikturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Turan</td>
+                <td>info@cinarturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ahmet Turan</td>
+                <td>info@ahmetturan.com</td>
+                <td>Kocaeli</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Hasan Demir</td>
+                <td>info@hasandemir.com</td>
+                <td>Kocaeli</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <br><br>
+
+    <div class="table-responsive">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sadık Turan</td>
+                    <td>info@sadikturan.com</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Çınar Turan</td>
+                    <td>info@cinarturan.com</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ahmet Turan</td>
+                    <td>info@ahmetturan.com</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Hasan Demir</td>
+                    <td>info@hasandemir.com</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                    <td>Kocaeli</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  </body>
+</html>

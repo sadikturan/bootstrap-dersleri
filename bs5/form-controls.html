@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Bootstrap Form Controls</title>
+    <style>
+        body { padding: 70px; }
+    </style>
+  </head>
+  <body>
+
+    <div class="mb-3">
+        <label for="fname" class="form-label">Name</label>
+        <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter name">
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="description" id="description" class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="fname" class="form-label">Name</label>
+        <input type="text" name="fname" id="fname" class="form-control form-control-sm" placeholder="Enter name">
+    </div>
+
+    <div class="mb-3">
+        <label for="fname" class="form-label">Name</label>
+        <input type="text" name="fname" id="fname" class="form-control form-control-lg" placeholder="Enter name">
+    </div>
+
+
+    <div class="mb-3">
+        <label for="fname" class="form-label">Name</label>
+        <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter name" readonly>
+    </div>
+
+    <div class="mb-3">
+        <label for="fname" class="form-label">Name</label>
+        <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter name" disabled>
+    </div>
+
+    <div class="mb-3">
+        <label for="sehirler" class="form-label">Şehirler</label>
+        <select name="sehirler" id="sehirler" class="form-select">
+            <option value="41">Kocaeli</option>
+            <option value="34">İstanbul</option>
+            <option value="53">Rize</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="sehirler" class="form-label">Şehirler</label>
+        <input type="text" list="sehirListesi" class="form-control" placeholder="Type...">
+        <datalist id="sehirListesi">
+            <option value="Kocaeli"></option>
+            <option value="İstanbul"></option>
+            <option value="Rize"></option>
+        </datalist>
+    </div>
+
+    <div class="mb-3">
+        <label for="sehirler" class="form-label">Şehirler</label>
+        <select name="sehirler" id="sehirler" class="form-select form-select-lg">
+            <option value="41">Kocaeli</option>
+            <option value="34">İstanbul</option>
+            <option value="53">Rize</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="sehirler" class="form-label">Şehirler</label>
+        <select name="sehirler" id="sehirler" class="form-select form-select-sm">
+            <option value="41">Kocaeli</option>
+            <option value="34">İstanbul</option>
+            <option value="53">Rize</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="imageFile" class="form-label"></label>
+        <input type="file" id="imageFile" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label for="imageFile" class="form-label"></label>
+        <input type="file" id="imageFile" class="form-control" multiple>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  </body>
+</html>

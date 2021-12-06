@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Bootstrap Toasts</title>
+    <style>
+        body {padding: 70px;}
+    </style>
+  </head>
+  <body>
+
+    <div class="toast-container position-absolute bottom-0 end-0 p-3">   
+
+      <div class="toast" id="toast1">
+        <div class="toast-header">
+          <strong class="me-auto">title 1</strong>
+          <small>2 dakika önce</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+          Lorem ipsum dolor sit amet.
+        </div>
+      </div>
+
+      <div class="toast" id="toast2">
+        <div class="toast-header">
+          <strong class="me-auto">title 2</strong>
+          <small>2 dakika önce</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+          Lorem ipsum dolor sit amet.
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+      var toast1 = document.getElementById("toast1");
+      var toastObj1 = new bootstrap.Toast(toast1);
+      toastObj1.show();
+
+      var toast2 = document.getElementById("toast2");
+      var toastObj2 = new bootstrap.Toast(toast2, {
+        delay: 1000
+      });
+
+      setTimeout(() => {
+        toastObj2.show();
+      }, 2000);
+
+    </script>
+  </body>
+</html>

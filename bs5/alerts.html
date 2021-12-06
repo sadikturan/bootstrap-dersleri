@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Bootstrap Alerts</title>
+    <style>
+        body { padding: 70px; }
+    </style>
+  </head>
+  <body>
+
+    <div class="alert alert-primary">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div class="alert alert-secondary">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div class="alert alert-success">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div class="alert alert-danger">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div class="alert alert-warning">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div class="alert alert-info">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div class="alert alert-dark">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div class="alert alert-light">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+
+    <br><br>
+
+    <div class="alert alert-primary">
+        Lorem ipsum dolor sit amet.
+        <a href="" class="alert-link">link text</a>
+    </div>
+
+    <div class="alert alert-secondary">
+        Lorem ipsum dolor sit amet.        
+        <a href="" class="alert-link">link text</a>
+    </div>
+
+    <br><br>
+
+    <div class="alert alert-success">
+        <h4>Lorem ipsum dolor sit.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis et nobis tempora aliquid suscipit a, impedit ipsa, harum quaerat in fugit libero facilis eligendi adipisci pariatur. Nisi magni non maxime!</p>
+        <hr>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad beatae, in provident libero aut est accusamus dicta cupiditate iure repellendus sunt hic veniam nisi minus accusantium assumenda tempora inventore.</p>
+    </div>
+
+    <br><br>
+
+    <div class="alert alert-danger">
+        <h4>Lorem ipsum dolor sit.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis et nobis tempora aliquid suscipit a, impedit ipsa, harum quaerat in fugit libero facilis eligendi adipisci pariatur. Nisi magni non maxime!</p>
+        <hr>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ad beatae, in provident libero aut est accusamus dicta cupiditate iure repellendus sunt hic veniam nisi minus accusantium assumenda tempora inventore.</p>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible fade show">
+        Lorem ipsum dolor sit.
+        <button type="button" class="btn-close" data-bs-dismiss="alert">
+        </button>
+    </div>
+
+    <div id="message"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script>
+        var message = document.getElementById('message');
+
+        message.classList = 'alert alert-success show fade';
+        message.innerHTML = 'success message';
+
+        console.log(bootstrap)
+
+        var bsAlert = new bootstrap.Alert(message);
+
+        message.addEventListener('close.bs.alert', function() {
+            console.log('alert kapanıyor...');
+        })
+
+        message.addEventListener('closed.bs.alert', function() {
+            console.log('alert kapandı...');
+        })
+
+        setTimeout(function() {
+            bsAlert.close();
+        }, 2000);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Bootstrap Validations</title>
+    <style>
+        body { padding: 70px; }
+    </style>
+  </head>
+  <body>
+
+    <form class="row g-3 need-validations" novalidate>
+      <div class="col-4">
+        <label for="firstname" class="form-label">Ad</label>
+        <input type="text" class="form-control" id="firstname" required>
+        <div class="valid-feedback">
+          geçerli
+        </div>
+        <div class="invalid-feedback">
+          geçersiz
+        </div>
+      </div>
+      <div class="col-4">
+        <label for="lastname" class="form-label">Soyad</label>
+        <input type="text" class="form-control is-invalid" id="lastname" required>
+        <div class="valid-feedback">
+          geçerli
+        </div>
+        <div class="invalid-feedback">
+          geçersiz
+        </div>
+      </div>
+      <div class="col-4">
+        <label for="username" class="form-label">Kullanıcı Adı</label>
+        <input type="text" class="form-control" id="username" required>
+      </div>
+      <div class="col-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="col-6">
+        <label for="password" class="form-label">Parola</label>
+        <input type="password" class="form-control" id="password" required>
+      </div>
+      <div class="col-12">
+        <label for="address" class="form-label">Adres</label>
+        <textarea class="form-control" id="address" required></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+      </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+      var form = document.querySelector(".need-validations");
+
+
+      form.addEventListener("submit", function(event) {
+        if(!form.checkValidity()) {
+          event.preventDefault();
+        }
+        form.classList.add("was-validated");
+      });
+    </script>
+  </body>
+</html>

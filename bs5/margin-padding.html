@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Bootstrap Spacing</title>
+    <style>
+        body {
+            padding: 70px;
+        }
+    </style>
+  </head>
+  <body>
+
+     <!-- 
+       Margin ve Padding => {property}{sides}-{size}
+
+       {property} =>
+        m: margin
+        p: padding
+
+        {sides} =>
+          t: top => mt
+          b: bottom => pb
+          s: start => left => ms
+          e: end => right => pe
+          x: right, left => mx
+          y: top, bottom => py
+
+        {size} =>
+          0: mt-0 => margin-top:0
+          1: mt-1 => $spacer * 0.25
+          2: mt-2 => $spacer * 0.25
+          3: mt-3 => $spacer 
+          4: mt-4 => $spacer * 1.5
+          5: mt-5 => $spacer * 3
+          auto: mx-auto => margin-left: auto; margin-right: auto;
+
+      -->
+
+
+      <div class="bg-success p-4">first</div>
+      <div class="bg-danger pt-5 mt-3">first</div>
+
+      <br><br>
+
+      <div class="bg-primary mx-auto" style="text-align: center; width: 150px;">ortalanmış içerik</div>
+
+      <br><br>
+
+      <div>
+        <span class="bg-danger p-3 me-3">text 1</span>
+        <span class="bg-warning p-3 ms-5">text 2</span>
+        <span class="bg-info ps-3">text 3</span>
+      </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>

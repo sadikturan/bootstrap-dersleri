@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Bootstrap Popovers</title>
+    <style>
+        body { padding: 70px; }
+    </style>
+  </head>
+  <body>
+
+    <button class="btn btn-warning" id="btnShow">Show</button>
+    <button class="btn btn-warning" id="btnHide">Hide</button>
+    <button class="btn btn-warning" id="btnToggle">Toggle</button>
+
+    <br><br><br><br>
+
+    <button id="btn1" type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-trigger="click" title="title 1" data-bs-content="content 1">Popover 1</button>
+    <button id="btn2" type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-trigger="hover" title="title 2" data-bs-content="content 2">Popover 2</button>
+    <button id="btn3" type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-trigger="hover" title="title 3" data-bs-content="<h2>content 3</h2>" data-bs-html="true">Popover 3</button>
+    <button id="btn4" type="button" class="btn btn-primary" data-bs-toggle="popover">Popover 4</button>
+
+    <div id="content" style="display: none;">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, libero error. Laborum esse voluptas sed porro nobis? Sapiente tenetur laborum, unde nemo tempore reprehenderit illum nobis incidunt consequatur optio ducimus.</p>
+      <button type="submit" class="btn btn-danger">Kapat</button>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+      var btn1 = document.getElementById("btn1");
+      // var popover1 = new bootstrap.Popover(btn1);
+
+      var btn2 = document.getElementById("btn2");
+      new bootstrap.Popover(btn2);
+
+      var btn3 = document.getElementById("btn3");
+      new bootstrap.Popover(btn3);
+
+      var btn4 = document.getElementById("btn4");
+      new bootstrap.Popover(btn4 ,{
+        html: true,
+        title: "title 4",
+        content: function() {
+          return document.getElementById("content").innerHTML
+        },
+        trigger: "hover"
+      });
+
+      document.getElementById("btnShow").addEventListener("click", function() {
+        popover1.show();
+      });
+
+      document.getElementById("btnHide").addEventListener("click", function() {
+        popover1.hide();
+      });
+
+      document.getElementById("btnToggle").addEventListener("click", function() {
+        popover1.toggle();
+      });
+
+      btn1.addEventListener("show.bs.popover", function() {
+        console.log("show.bs.popover");
+      })
+
+      btn1.addEventListener("shown.bs.popover", function() {
+        console.log("shown.bs.popover");
+      })
+
+      btn1.addEventListener("hide.bs.popover", function() {
+        console.log("hide.bs.popover");
+      })
+
+      btn1.addEventListener("hidden.bs.popover", function() {
+        console.log("hidden.bs.popover");
+      })
+
+      // var popoverElementList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+
+      // var popoverObjectList = popoverElementList.map(function(element) {
+      //   return new bootstrap.Popover(element);
+      // })
+
+      // console.log(popoverObjectList);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Bootstrap Carousel</title>
+    <style>
+        body {padding: 70px;}
+    </style>
+  </head>
+  <body>
+
+    <div class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel" id="slider1">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#slider1" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#slider1" data-bs-slide-to="1"></li>
+        <li data-bs-target="#slider1" data-bs-slide-to="2"></li>
+        <li data-bs-target="#slider1" data-bs-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/slider-1.jpeg" alt="">
+          <div class="carousel-caption">
+            <h4>Slide 1</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/slider-2.jpeg" alt="">
+          <div class="carousel-caption">
+            <h4>Slide 2</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/slider-3.jpeg" alt="">
+          <div class="carousel-caption">
+            <h4>Slide 3</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/slider-2.jpeg" alt="">
+          <div class="carousel-caption">
+            <h4>Slide 4</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#slider1" class="carousel-control-prev" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#slider1" class="carousel-control-next" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <button class="btn btn-primary my-5" id="prev">Geri</button>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+      var myCarousel = document.getElementById("slider1");
+
+      var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000,
+        wrap: true,
+        keyboard: false,
+        pause: 'hover',
+        touch: true
+      });
+
+    document.getElementById("prev").addEventListener("click", function() {
+      carousel.prev();
+      // carousel.next();
+      // carousel.pause();
+      // carousel.cycle();
+    });
+
+    myCarousel.addEventListener("slide.bs.carousel", function(e) {
+      console.log(e.direction);
+      console.log(e.from);
+      console.log(e.to);
+      console.log("öncesi");
+    });
+
+    
+    myCarousel.addEventListener("slid.bs.carousel", function(e) {
+     console.log("sonrası");
+    });
+
+
+    </script>
+   
+  </body>
+</html>

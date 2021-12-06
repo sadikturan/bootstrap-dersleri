@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Bootstrap Offcanvas</title>
+    <style>
+        body { padding: 70px; }
+    </style>
+  </head>
+  <body>
+
+    <button id="btnOpen" type="button" class="btn btn-primary">Button</button>
+
+    <div style="height: 1000px;"></div>
+
+   <div class="offcanvas offcanvas-end" id="myOffcanvas">
+     <div class="offcanvas-header">
+       <h5 class="offcanvas-title">Header</h5>
+       <button type="button" class="btn-close" id="btnClose"></button>
+     </div>
+     <div class="offcanvas-body">
+       <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vero reiciendis eveniet nihil, deleniti repellendus, cum amet adipisci cupiditate laudantium enim et, odit ratione nulla beatae necessitatibus eum expedita mollitia?
+       </p>
+       <p>
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi accusantium odit perferendis sequi? Quidem libero rerum maxime consequatur sunt dolores quo omnis dolorum odio illum. Eaque aliquid adipisci in id?
+       </p>
+     </div>
+   </div>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+   <script>
+     var offcanvas = document.getElementById("myOffcanvas");
+
+     var objOffcanvas = new bootstrap.Offcanvas(offcanvas, {
+      backdrop: false,
+      keyboard: false,
+      scroll: false
+     });
+
+     document.getElementById("btnOpen").addEventListener("click", function() {
+      objOffcanvas.show();
+     })
+
+     document.getElementById("btnClose").addEventListener("click", function() {
+      objOffcanvas.hide();
+     })
+
+     offcanvas.addEventListener("show.bs.offcanvas", function() {
+      console.log("show")
+     });
+
+     offcanvas.addEventListener("shown.bs.offcanvas", function() {
+      console.log("shown")
+     });     
+
+     offcanvas.addEventListener("hide.bs.offcanvas", function() {
+      console.log("hide")
+     });
+
+     offcanvas.addEventListener("hidden.bs.offcanvas", function() {
+      console.log("hidden")
+     });
+
+   </script>
+  </body>
+</html>
